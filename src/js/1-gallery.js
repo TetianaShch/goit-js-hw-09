@@ -34,11 +34,11 @@ const images = [
 const gallery = document.querySelector('.gallery');
 
 const markup = images.map(({ preview, original, description }) => `
-  <li class="gallery__item">
-    <a class="gallery__link" href="${original}">
-      <img class="gallery__image" src="${preview}" alt="${description}" />
-    </a>
-  </li>
+  <li class="gallery-item">
+  <a class="gallery-link" href="${original}">
+    <img class="gallery-image" src="${preview}" alt="${description}" />
+  </a>
+</li>
 `).join('');
 
 gallery.insertAdjacentHTML('beforeend', markup);
